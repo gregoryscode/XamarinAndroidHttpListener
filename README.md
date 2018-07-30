@@ -32,7 +32,7 @@ As told by [J Millis](https://stackoverflow.com/a/3071515/2466497) in StackOverf
 
 <h2>Authors</h2>
 
-- Gregory Perozzo - [More info](https://www.linkedin.com/in/perozzo/)
+- [Gregory Perozzo](https://www.linkedin.com/in/perozzo/)
 
 <h2>License</h2>
 
