@@ -1,7 +1,7 @@
 # XamarinAndroidHttpListener
 Simple HTTP listener for Xamarin Android
 
-**Usage**
+<h2>Usage</h2>
 
 Just add the prefixes you want to listen with the port number to your `HttpListener`:
 
@@ -20,7 +20,7 @@ if(url.Contains(TurnOnCameraController))
 }
 ```
 
-**HttpListener in Mono**
+<h2>HttpListener in Mono</h2>
 
 As told by [J Millis](https://stackoverflow.com/a/3071515/2466497) in StackOverflow:
 
