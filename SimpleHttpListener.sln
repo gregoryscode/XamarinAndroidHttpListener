@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHttpListener", "SimpleHttpListener\SimpleHttpListener.csproj", "{03633D8E-F401-49A4-8271-ACB30EA45085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03633D8E-F401-49A4-8271-ACB30EA45085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03633D8E-F401-49A4-8271-ACB30EA45085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03633D8E-F401-49A4-8271-ACB30EA45085}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{03633D8E-F401-49A4-8271-ACB30EA45085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03633D8E-F401-49A4-8271-ACB30EA45085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03633D8E-F401-49A4-8271-ACB30EA45085}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4172E885-9D60-4D65-9239-18C32BDE42EA}
+	EndGlobalSection
+EndGlobal
