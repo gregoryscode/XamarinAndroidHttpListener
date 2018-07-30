@@ -1,5 +1,4 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
 using System.Net;
 using System;
@@ -11,10 +10,9 @@ namespace SimpleHttpListener
     public class MainActivity : Activity
     {
         private HttpListener _listener;
-        private const string TurnOnCamera = "TurnOnCamera";
-        private const string TurnOffCamera = "TurnOffCamera";
-        private const string TestCamera = "TestCamera";
-        private const string GregoryIsTheBest = "GregoryIsTheBest";
+        private const string TurnOnCameraController = "TurnOnCamera";
+        private const string TurnOffCameraController = "TurnOffCamera";
+        private const string TestCameraController = "TestCamera";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,10 +31,9 @@ namespace SimpleHttpListener
             }
 
             _listener = new HttpListener();
-            _listener.Prefixes.Add($"http://+:1616/{TurnOnCamera}/");
-            _listener.Prefixes.Add($"http://+:1616/{TurnOffCamera}/");
-            _listener.Prefixes.Add($"http://+:1616/{TestCamera}/");
-            _listener.Prefixes.Add($"http://+:1616/{GregoryIsTheBest}/");
+            _listener.Prefixes.Add($"http://+:1616/{TurnOnCameraController}/");
+            _listener.Prefixes.Add($"http://+:1616/{TurnOffCameraController}/");
+            _listener.Prefixes.Add($"http://+:1616/{TestCameraController}/");
             _listener.Start();
             _listener.BeginGetContext(HandleRequest, _listener);
         }
@@ -48,21 +45,17 @@ namespace SimpleHttpListener
 
             string url = context.Request.Url.ToString();
 
-            if(url.Contains(TurnOnCamera))
+            if(url.Contains(TurnOnCameraController))
             {
                 response = "<html><h1>The camera has been turned on.</h1></html>";
             }
-            else if (url.Contains(TurnOffCamera))
+            else if (url.Contains(TurnOffCameraController))
             {
                 response = "<html><h1>The camera has been turned off.</h1></html>";
             }
-            else if (url.Contains(TestCamera))
+            else if (url.Contains(TestCameraController))
             {
                 response = "<html><h1>The camera is working as expected.</h1></html>";
-            }
-            else if(url.Contains(GregoryIsTheBest))
-            {
-                response = "<html><h1 style='color: red;'>You are goddamn right sir.</h1></html>";
             }
             
             byte[] buffer = Encoding.UTF8.GetBytes(response);
