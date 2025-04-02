@@ -1,5 +1,5 @@
 # XamarinAndroidHttpListener
-Simple HTTP listener for Xamarin Android
+Simple HTTP listener for Xamarin.Android
 
 <h2>Usage</h2>
 
